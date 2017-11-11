@@ -17,7 +17,7 @@ My setup uses Ubuntu Linux 17. If you have another operating system, make the ne
 
 1. Go to https://angular.io/guide/quickstart and read it thoroughly. That will help you understand how to install both NodeJS and AngularJS in your computer. Do not forget to test your setup to see if your AngularJS is running correctly.
 
-2. Download all the contents of the src folder of this project, and put it in the src folder of your AngularJS app. You are effectively overwriting the contents of your app’s src folder with this project’s src folder.
+2. Download all the contents of the app folder of this project, and put it in the src /app folder of your AngularJS app. You are effectively overwriting the contents of your app’s src/app folder with this project’s app folder.
 
 3. Go to https://github.com/gamehelphere/rlb-recipetime and study the README.md to install the WSGI Python server. Do this on another command line to avoid conflict with the command line that handles your AngularJS app.
 
