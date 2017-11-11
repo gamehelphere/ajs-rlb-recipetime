@@ -1,0 +1,45 @@
+<section>
+  <table align = "center" border = "1">
+    <tr>
+      <td>
+        ID
+      </td>
+      <td>
+        Name
+      </td>
+      <td>
+        Date Created
+      </td>
+      <td align = "center">
+        Serving Size
+      </td>
+      <td align = "center">
+        Serving Size Unit
+      </td>
+    </tr>
+    <tr *ngFor = "let recipeListEntry of recipeList">
+      <td align = "center">
+        {{recipeListEntry.recipecode}}
+      </td>
+      <!--
+      <td (click) = "showIngredients(recipeListEntry)">
+        {{recipeListEntry.description}}
+      </td>-->
+      <td>
+        <a routerLink = "/showrecipeingredients/{{recipeListEntry.recipecode}}">{{recipeListEntry.description}}</a>
+      </td>
+      <td>
+        {{recipeListEntry.date}}
+      </td>
+      <td align = "center">
+        {{recipeListEntry.servingsize}}
+      </td>
+      <td align = "center">
+        <a routerLink = "/showunits">{{recipeListEntry.servingsizeunit}}</a>
+      </td>
+    </tr>
+  </table>
+</section>
+<section>
+  <router-outlet></router-outlet>
+</section>
